@@ -1,6 +1,6 @@
 class Service < ApplicationRecord
   belongs_to :salon
 
-  validates :service, presence: {message: "Please enter service"}
-  validates price:, presence: {message: "Please enter price"}
+  validates :name, presence: {message: "must be present"}
+  validates :price, presence: {message: "must be present"}
 end

@@ -934,3 +934,125 @@ Processing by AppointmentsController#index as HTML
 Completed 200 OK in 67ms (Views: 38.4ms | ActiveRecord: 28.4ms | Allocations: 7159)
 
 
+Started POST "/services" for ::1 at 2021-08-10 23:22:05 -0400
+  
+SyntaxError (/Users/shev/Development/code/Mod5/Capstone-Project/backend_api/app/models/service.rb:5: syntax error, unexpected ','
+  validates price:, presence: {message: "Please ...
+                  ^):
+  
+app/models/service.rb:5: syntax error, unexpected ','
+app/models/service.rb:5: syntax error, unexpected ','
+Started POST "/services" for ::1 at 2021-08-10 23:23:06 -0400
+Processing by ServicesController#create as */*
+  Parameters: {"name"=>"Deep Conditioning", "price"=>"40", "salon_id"=>"2", "service"=>{"name"=>"Deep Conditioning", "price"=>"40", "salon_id"=>"2"}}
+[31mUnpermitted parameter: :service[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/services_controller.rb:4:in `create'
+  [1m[36mSalon Load (1.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/services_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/services_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 145.0ms | Allocations: 12373)
+
+
+  
+NoMethodError (undefined method `service' for #<Service:0x00007f828f524ec8>):
+  
+app/controllers/services_controller.rb:4:in `create'
+Started POST "/services" for ::1 at 2021-08-10 23:27:21 -0400
+Processing by ServicesController#create as */*
+  Parameters: {"name"=>"Deep Conditioning", "price"=>"40", "salon_id"=>"2", "service"=>{"name"=>"Deep Conditioning", "price"=>"40", "salon_id"=>"2"}}
+[31mUnpermitted parameter: :service[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/services_controller.rb:4:in `create'
+  [1m[36mSalon Load (0.4ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/services_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/services_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 75.4ms | Allocations: 12493)
+
+
+  
+NoMethodError (undefined method `service' for #<Service:0x00007f829007f610>):
+  
+app/controllers/services_controller.rb:4:in `create'
+Started POST "/services" for ::1 at 2021-08-10 23:29:21 -0400
+Processing by ServicesController#create as */*
+  Parameters: {"name"=>"Deep Conditioning", "price"=>"40", "salon_id"=>"2", "service"=>{"name"=>"Deep Conditioning", "price"=>"40", "salon_id"=>"2"}}
+[31mUnpermitted parameter: :service[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/services_controller.rb:4:in `create'
+  [1m[36mSalon Load (0.4ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/services_controller.rb:4:in `create'
+  [1m[36mService Create (51.2ms)[0m  [1m[32mINSERT INTO "services" ("name", "price", "salon_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Deep Conditioning"], ["price", 40], ["salon_id", 2], ["created_at", "2021-08-11 03:29:22.064185"], ["updated_at", "2021-08-11 03:29:22.064185"]]
+  ↳ app/controllers/services_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/services_controller.rb:4:in `create'
+[active_model_serializers] Rendered ServiceSerializer with ActiveModelSerializers::Adapter::Attributes (3.44ms)
+Completed 201 Created in 148ms (Views: 14.2ms | ActiveRecord: 95.4ms | Allocations: 12010)
+
+
+Started POST "/services" for ::1 at 2021-08-10 23:31:06 -0400
+Processing by ServicesController#create as */*
+  Parameters: {"name"=>"Wash and Set", "price"=>"", "salon_id"=>"1", "service"=>{"name"=>"Wash and Set", "price"=>"", "salon_id"=>"1"}}
+[31mUnpermitted parameter: :service[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/services_controller.rb:4:in `create'
+  [1m[36mSalon Load (0.4ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/services_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/services_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 422 Unprocessable Entity in 82ms (Views: 1.4ms | ActiveRecord: 33.2ms | Allocations: 11070)
+
+
+Started POST "/services" for ::1 at 2021-08-10 23:31:30 -0400
+Processing by ServicesController#create as */*
+  Parameters: {"name"=>"Wash and Set", "price"=>"30", "salon_id"=>"1", "service"=>{"name"=>"Wash and Set", "price"=>"30", "salon_id"=>"1"}}
+[31mUnpermitted parameter: :service[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/services_controller.rb:4:in `create'
+  [1m[36mSalon Load (8.8ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/services_controller.rb:4:in `create'
+  [1m[36mService Create (4.7ms)[0m  [1m[32mINSERT INTO "services" ("name", "price", "salon_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Wash and Set"], ["price", 30], ["salon_id", 1], ["created_at", "2021-08-11 03:31:30.800108"], ["updated_at", "2021-08-11 03:31:30.800108"]]
+  ↳ app/controllers/services_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/services_controller.rb:4:in `create'
+[active_model_serializers] Rendered ServiceSerializer with ActiveModelSerializers::Adapter::Attributes (3.19ms)
+Completed 201 Created in 41ms (Views: 5.6ms | ActiveRecord: 23.5ms | Allocations: 3540)
+
+
+Started POST "/reviews" for ::1 at 2021-08-10 23:47:01 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"rating"=>"6", "comment"=>"I love it here!", "salon_id"=>"1", "user_id"=>"3", "review"=>{"rating"=>"6", "comment"=>"I love it here!", "salon_id"=>"1", "user_id"=>"3"}}
+[31mUnpermitted parameter: :review[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:4:in `create'
+  [1m[36mSalon Load (1.7ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4:in `create'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/reviews_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 422 Unprocessable Entity in 214ms (Views: 0.8ms | ActiveRecord: 145.1ms | Allocations: 18717)
+
+
+Started POST "/reviews" for ::1 at 2021-08-10 23:47:12 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"rating"=>"4.5", "comment"=>"I love it here!", "salon_id"=>"1", "user_id"=>"3", "review"=>{"rating"=>"4.5", "comment"=>"I love it here!", "salon_id"=>"1", "user_id"=>"3"}}
+[31mUnpermitted parameter: :review[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:4:in `create'
+  [1m[36mSalon Load (1.9ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4:in `create'
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4:in `create'
+  [1m[36mReview Create (81.4ms)[0m  [1m[32mINSERT INTO "reviews" ("rating", "comment", "salon_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["rating", 4], ["comment", "I love it here!"], ["salon_id", 1], ["user_id", 3], ["created_at", "2021-08-11 03:47:12.989209"], ["updated_at", "2021-08-11 03:47:12.989209"]]
+  ↳ app/controllers/reviews_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:4:in `create'
+[active_model_serializers] Rendered ReviewSerializer with ActiveModelSerializers::Adapter::Attributes (9.96ms)
+Completed 201 Created in 121ms (Views: 14.9ms | ActiveRecord: 93.4ms | Allocations: 4941)
+
+
