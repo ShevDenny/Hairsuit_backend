@@ -7,6 +7,6 @@ class SalonsController < ApplicationController
 
     def show
         salon = Salon.find_by(id: params[:id])
-        render json: salon
+        render json: salon.with_services_reviews
     end
 end

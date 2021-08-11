@@ -4,7 +4,7 @@ class ServicesController < ApplicationController
         service = Service.create(service_params)
 
         if service.valid?
-            render json: service, status: 201
+            render json: service.salon, status: 201
         else
             render json: {errors: service.errors.full_messages}, status: 422
         end
