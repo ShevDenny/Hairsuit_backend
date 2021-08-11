@@ -1056,3 +1056,20 @@ Processing by ReviewsController#create as */*
 Completed 201 Created in 121ms (Views: 14.9ms | ActiveRecord: 93.4ms | Allocations: 4941)
 
 
+Started GET "/salons" for ::1 at 2021-08-10 23:55:54 -0400
+Processing by SalonsController#index as HTML
+  [1m[36mSalon Load (0.9ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.57ms)
+Completed 200 OK in 88ms (Views: 77.9ms | ActiveRecord: 59.5ms | Allocations: 8595)
+
+
+Started GET "/salons/1" for ::1 at 2021-08-10 23:56:02 -0400
+Processing by SalonsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSalon Load (1.2ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/salons_controller.rb:9:in `show'
+[active_model_serializers] Rendered SalonSerializer with ActiveModelSerializers::Adapter::Attributes (0.57ms)
+Completed 200 OK in 28ms (Views: 3.1ms | ActiveRecord: 1.7ms | Allocations: 817)
+
+
