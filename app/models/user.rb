@@ -23,6 +23,14 @@ class User < ApplicationRecord
                     end_time: appointment.end_time,
                     description: appointment.description
                 }
+            end,
+            salon: self.salons.map do |salon|
+                {
+                    
+                    name:salon.name,
+                    location:salon.location
+            
+                }
             end
         }
     end
