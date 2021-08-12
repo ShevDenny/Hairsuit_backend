@@ -17,13 +17,18 @@ class AppointmentsController < ApplicationController
 
     def show
         appointment = Appointment.find_by(id: params[:id])
-        render json: appointment.user_salon_info
+
+        if appointment
+            render json: appointment.user_salon_info
+        else
+            render json: {error: "Appointment not found"}
+        end
     end
 
     def destroy
         appointment = Appointment.find_by(id: params[:id])
 
-        if appointment.valid?
+        if appointment
             appointment.destroy
             head :no_content
         else 
