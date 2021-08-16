@@ -15,11 +15,13 @@ class Appointment < ApplicationRecord
       description: self.description,
       user: 
         {
+          user_id: self.user.id,
           name: self.user.name,
           email: self.user.email
         }, 
       salon: 
         {
+          salon_id: self.salon.id,
           name: self.salon.name,
           location: self.salon.location
         }

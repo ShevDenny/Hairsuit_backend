@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+    before_action :authenticate, only: [:me, :update]
 
     def index
         users = User.all
@@ -23,9 +24,27 @@ class UsersController < ApplicationController
         end
     end
 
+    def me
+        render json: @current_user
+    end
+
+    def update
+        @current_user.update(user_params)
+        render json: @current_user
+    end
+
+    def login
+        user = User.find_by(user_name: params[:user][:user_name])
+        if user && user.authenticate(params[:user][:password])
+            render json: user
+        else
+            render json: { errors: ['incorrect username and/or password']}, status: 401
+        end
+    end
+
     private
 
     def user_params
-        params.permit(:name, :user_name, :password_digest, :email, :admin)
+        params.require(:user).permit(:name, :user_name, :password, :email, :admin)
     end
 end

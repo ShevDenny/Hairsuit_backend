@@ -44,3 +44,4 @@ gem 'active_model_serializers'
 gem 'activerecord-reset-pk-sequence'
 
 gem 'faker'
+gem "jwt", "~> 2.2"

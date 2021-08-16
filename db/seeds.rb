@@ -11,8 +11,8 @@ Review.destroy_all
 Review.reset_pk_sequence
 
 puts 'Creating User...🙋🏽‍♀️'
-user1 = User.create(name: "Shevon", user_name: "Shev", password_digest: "12345", email: "s@d.com", admin: false)
-user2 = User.create(name: "Corletta", user_name: "Letta", password_digest: "12345", email: "c@d.com", admin: true)
+user1 = User.create(name: "Shevon", user_name: "Shev", password: "1234567", email: "s@d.com", admin: false)
+user2 = User.create(name: "Corletta", user_name: "Letta", password: "1234567", email: "c@d.com", admin: true)
 
 
 puts 'Creating Salon...🎀'
@@ -27,8 +27,8 @@ Service.create(name: 'Silk Press', price: 100, salon_id: salon1.id)
 Service.create(name: 'Cut', price: 40, salon_id: salon1.id)
 
 puts 'Creating Appointment...🗓'
-Appointment.create(date: 'September 3, 2021', start_time: '1:30pm', end_time: '2:30pm', description: "Need a blowout", user_id: user1.id, salon_id: salon1.id)
-Appointment.create(date: 'September 10, 2021', start_time: '4:30pm', end_time: '5:30pm', description: "Need a cut", user_id: user2.id, salon_id: salon2.id)
+Appointment.create(date: '2021-08-25' , start_time: '10:30', end_time: '11:30', description: "Need a blowout", user_id: user1.id, salon_id: salon1.id)
+Appointment.create(date: '2021-08-27', start_time: '1:30', end_time: '2:30', description: "Need a cut", user_id: user2.id, salon_id: salon2.id)
 
 puts 'Creating Review...📝'
 Review.create(rating: 5, comment: 'This is a great salon', salon_id: salon1.id, user_id: user1.id)

@@ -6,7 +6,7 @@ class AppointmentsController < ApplicationController
     end
 
     def create
-        appointment = Appointment.create(appointment_params)
+        appointment = Appointment.create(appointment_params)      
 
         if appointment.valid?
             render json: appointment, status: 201
@@ -39,6 +39,6 @@ class AppointmentsController < ApplicationController
     private
 
     def appointment_params
-        params.permit(:date, :start_time, :end_time, :description, :user_id, :salon_id)
+        params.require(:appointment).permit(:date, :start_time, :end_time, :description, :user_id, :salon_id)
     end
 end
