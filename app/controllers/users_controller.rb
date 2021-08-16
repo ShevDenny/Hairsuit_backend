@@ -9,9 +9,21 @@ class UsersController < ApplicationController
     def create
         user = User.create(user_params)
         if user.valid?
-            render json: user, status: 201
+            token = JWT.encode({ user_id: user.id }, 'my_secret', 'HS256')
+            render json: { user: UserSerializer.new(user), token: token }, status: 201
         else
             render json: {errors: user.errors.full_messages}, status: 422
+        end
+    end
+
+    def login
+        user = User.find_by(user_name: params[:user][:user_name])
+       
+        if user && user.authenticate(params[:user][:password])
+            token = JWT.encode({ user_id: user.id }, 'my_secret', 'HS256')
+            render json: { user: UserSerializer.new(user), token: token }, status: 201
+        else
+            render json: { errors: ['incorrect username and/or password']}, status: 401
         end
     end
 
@@ -33,14 +45,6 @@ class UsersController < ApplicationController
         render json: @current_user
     end
 
-    def login
-        user = User.find_by(user_name: params[:user][:user_name])
-        if user && user.authenticate(params[:user][:password])
-            render json: user
-        else
-            render json: { errors: ['incorrect username and/or password']}, status: 401
-        end
-    end
 
     private
 
