@@ -67,6 +67,7 @@ salon5 = Salon.create(
 salon6 = Salon.create(
     name: '5 Salon & Spa', 
     location: '1643 Schlosser St, Fort Lee, NJ 07024', 
+    specialize_in: ['color', 'haircut', 'styling', 'blowouts', 'Bridal hair', 'keratin smoothing', 'highlights'],
     image: 'https://images.squarespace-cdn.com/content/v1/5bd9cd8ce749403b5b826574/1604386168888-FKDB0UR7XVEAQRDEIUIX/IMG_4615.jpg?format=1500w', 
     description: '5 Salon &Spa’s objective is to be of service by being Leaders, Educators as well as Information Providers to all by touching, moving and inspiring our community through our craft'
     )
@@ -251,62 +252,62 @@ Appointment.create(date: '2021-08-27', start_time: '1:30', end_time: '2:30', des
 puts 'Creating Review...📝'
 Review.create(
     rating: 5, 
-    comment: '"Ursula Stephen is a celebrity hairstylist who has worked with stars like Rihanna and Bebe Rexha, and she opened up her own salon in Brooklyn a few years back. The cozy space is all exposed brick and oversized mirrors, and she’s always got R&B jams playing. This spot specializes in silk presses — look on any stylist’s station and you’ll see a flat iron and hot comb laid side by side — and weave installations. Ursula is also a master at cuts. She can give you anything, from a blunt bob to a textured pixie and even feathery layers. But you have to catch her when she’s in town, because she travels a lot to do magazine shoots and red-carpet hair." — Jessica Cruel, Deputy Beauty Director at Refinery29', 
+    comment: 'The cozy space is all exposed brick and oversized mirrors, and she’s always got R&B jams playing. This spot specializes in silk presses — look on any stylist’s station and you’ll see a flat iron and hot comb laid side by side — and weave installations. Ursula is also a master at cuts. She can give you anything, from a blunt bob to a textured pixie and even feathery layers.', 
     salon_id: salon1.id, 
     user_id: user1.id
     )
 Review.create(
     rating: 4, 
-    comment: "I discovered Reece from a friend of mine who worked with her for an editorial piece. At the time, I had been natural for about two years, and I was trying to find someone who could help me get that big full 'fro that I loved looking at on Instagram. Reece didn’t do that. Instead she got me to be daring and do something I’ve been afraid to do for ages — cut off all my hair. Now I have a head of barely-there tapered curls that I adore and a hairstylist I feel 100% comfortable trying new things with. Not only does Reece know how to care for curls, she also knows how to make her clients fall in love with their hair. It’s amazing!", 
+    comment: "I discovered Reece from a friend of mine who worked with her for an editorial piece. I have a head of barely-there tapered curls that I adore and a hairstylist I feel 100% comfortable trying new things with. Not only does Reece know how to care for curls, she also knows how to make her clients fall in love with their hair.", 
     salon_id: salon2.id, 
     user_id: user2.id
     )
 
 Review.create(
     rating: 5, 
-    comment: "It’s difficult to find stylists that truly know how to cut and style type 4 hair. Some want to blow your hair out and then trim it; some simply cut too much off by not paying attention to your shrinkage. Candace starts off each appointment with a consultation to get an idea of what you want, and she'll give you her honest opinion on what may (or may not) work with your texture. She's trained in cutting curly hair so that the shape is tailored specifically to your face and style. I’ve left every appointment satisfied with my bouncy, healthy curls.", 
+    comment: "Candace starts off each appointment with a consultation to get an idea of what you want, and she'll give you her honest opinion on what may (or may not) work with your texture. She's trained in cutting curly hair so that the shape is tailored specifically to your face and style. I’ve left every appointment satisfied with my bouncy, healthy curls.", 
     salon_id: salon3.id, 
     user_id: user2.id
     )
 
 Review.create(
     rating: 5, 
-    comment: "Mona speaks to you beforehand so that you're both on the same page before the scissors come out (which is super important for her), and she keeps you updated every step along the way. I never wondered, 'Omg, what is she doing now?' which is easy to worry about when hairstylists start snipping. Overall, she gave me exactly what I was looking for. She even followed up with me and messaged me on Instagram after the haircut to see how I was adjusting to my new look. Now, I can't imagine going anywhere else.", 
+    comment: "Mona speaks to you beforehand so that you're both on the same page before the scissors come out. I never wondered, 'Omg, what is she doing now?' Overall, she gave me exactly what I was looking for. She even followed up with me and messaged me on Instagram after the haircut to see how I was adjusting to my new look. Now, I can't imagine going anywhere else.", 
     salon_id: salon4.id, 
     user_id: user3.id
     )
 
 Review.create(
     rating: 5, 
-    comment: "I went into Hair Rules salon for my first professional dye job (I don't count the pre-teen blonde streaks I got). My hair is natural, and I usually wear it straight, so I needed someone well-versed in styling curly hair both ways to do the job. I found Jaxcee on Instagram and saw that she frequently colors curls, so I took a chance. Jackie took my jet-black hair to a warm blonde shade in two sessions. She walked me through every single step of the process, and I never felt like any question or concern I had was invalid. Most importantly, I loved my hair, and I haven't experienced any damage or breakage since my appointment. My color looks extremely natural and there are no harsh lines. If Jaxcee's doing your color, know that your curls are in good hands.", 
+    comment: "I found Jaxcee on Instagram and saw that she frequently colors curls, so I took a chance. Jackie took my jet-black hair to a warm blonde shade in two sessions. I loved my hair, and I haven't experienced any damage or breakage since my appointment. My color looks extremely natural and there are no harsh lines. If Jaxcee's doing your color, know that your curls are in good hands.", 
     salon_id: salon5.id, 
     user_id: user1.id
     )
 
-    Review.create(
+Review.create(
     rating: 5, 
-    comment: "Sitting in her chair felt like being around an old friend. She has such an amazing soul and, not to mention, she's super talented with curly hair. My consultation was extremely detailed. Ona evaluated my hair type, density, and scalp health. She walked me through every step of my service, from the cut to the color. She has naturally curly hair and knows how to manage it firsthand. It's going on 3 years now that I've been going to 5 Salon and Spa, and I will forever be a loyal client.", 
+    comment: "Sitting in her chair felt like being around an old friend. She has such an amazing soul and, not to mention, she's super talented with curly hair. It's going on 3 years now that I've been going to 5 Salon and Spa, and I will forever be a loyal client.", 
     salon_id: salon6.id, 
     user_id: user2.id
     )
 
-    Review.create(
+Review.create(
     rating: 4, 
     comment: "One of the best salons in town and it's stuck around for a reason. Has a welcoming ambiance.", 
     salon_id: salon7.id, 
     user_id: user3.id
     )
 
-    Review.create(
+Review.create(
     rating: 5, 
-    comment: "At Spoke & Weal Soho, you don’t tell Master Stylist Kelsy Osterman the exact length you’re going for—she lets your hair's natural texture dictate that for you instead. After listening to your locks (by seeing where your curls and waves start and end), she snips to perfection, delivering modern cuts full of body and volume. Best hair makeover!", 
+    comment: "At Spoke & Weal Soho, you don’t tell Master Stylist Kelsy Osterman the exact length you’re going for—she lets your hair's natural texture dictate that for you instead.  Best hair makeover!", 
     salon_id: salon8.id, 
     user_id: user4.id
     )
 
-    Review.create(
+Review.create(
     rating: 3, 
-    comment: "F&J embraces fun and community and prioritizes salon culture. We love that their pricing is uniquely based on hair length and service difficulty (rather than gender) and all products used are cruelty-free and accessibly priced.", 
+    comment: "F&J embraces fun and community and prioritizes salon culture. We love that their pricing is uniquely based on hair length and service difficulty (rather than gender).", 
     salon_id: salon9.id, 
     user_id: user3.id
     )

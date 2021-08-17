@@ -10,6 +10,8 @@ class Salon < ApplicationRecord
             name: self.name,
             location: self.location,
             specialize_in: self.specialize_in,
+            description: self.description,
+            image: self.image,
             services: self.services.map do |service|
                 {
                     name: service.name,
