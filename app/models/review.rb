@@ -4,6 +4,6 @@ class Review < ApplicationRecord
 
   validates :rating, :comment, presence: {message: "must be present"}
   validates :rating, inclusion: 1..5
-  validates :comment, length: {maximum: 150}
+  validates :comment, length: {maximum: 200}
 
 end
