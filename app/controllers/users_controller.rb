@@ -18,6 +18,7 @@ class UsersController < ApplicationController
 
     def login
         user = User.find_by(user_name: params[:user][:user_name])
+      
        
         if user && user.authenticate(params[:user][:password])
             token = JWT.encode({ user_id: user.id }, 'my_secret', 'HS256')
