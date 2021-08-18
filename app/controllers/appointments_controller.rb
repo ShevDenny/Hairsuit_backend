@@ -26,7 +26,7 @@ class AppointmentsController < ApplicationController
     end
 
     def destroy
-        appointment = Appointment.find_by(id: params[:id])
+        appointment = Appointment.find_by(id: params[:user], id: params[:appointment])
 
         if appointment
             appointment.destroy

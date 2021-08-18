@@ -33254,3 +33254,1369 @@ Processing by SalonsController#index as */*
 Completed 200 OK in 42ms (Views: 35.5ms | ActiveRecord: 6.5ms | Allocations: 2216)
 
 
+Started GET "/me" for ::1 at 2021-08-17 20:57:31 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (115.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (2.0ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (1.7ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (2.1ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (194.24ms)
+Completed 200 OK in 2017ms (Views: 198.3ms | ActiveRecord: 956.6ms | Allocations: 6237)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 20:57:33 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (10.9ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.87ms)
+Completed 200 OK in 125ms (Views: 109.2ms | ActiveRecord: 10.9ms | Allocations: 2216)
+
+
+Started GET "/me" for ::1 at 2021-08-17 20:59:40 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (7.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (12.1ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (2.3ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (18.1ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (296.41ms)
+Completed 200 OK in 527ms (Views: 272.5ms | ActiveRecord: 40.0ms | Allocations: 4076)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 20:59:43 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (6.6ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (43.4ms)
+Completed 200 OK in 93ms (Views: 86.2ms | ActiveRecord: 6.6ms | Allocations: 2216)
+
+
+Started GET "/me" for ::1 at 2021-08-17 21:00:45 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (45.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (3.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (1.2ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (2.8ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (236.95ms)
+Completed 200 OK in 371ms (Views: 247.4ms | ActiveRecord: 53.5ms | Allocations: 4078)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:00:47 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (3.4ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.82ms)
+Completed 200 OK in 71ms (Views: 65.9ms | ActiveRecord: 3.4ms | Allocations: 2216)
+
+
+Started DELETE "/appointments/9" for ::1 at 2021-08-17 21:15:08 -0400
+Processing by AppointmentsController#destroy as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mAppointment Load (37.1ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:29:in `destroy'
+  [1m[36mTRANSACTION (83.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/appointments_controller.rb:32:in `destroy'
+  [1m[36mAppointment Destroy (504.4ms)[0m  [1m[31mDELETE FROM "appointments" WHERE "appointments"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/appointments_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (34.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/appointments_controller.rb:32:in `destroy'
+Completed 204 No Content in 1411ms (ActiveRecord: 813.8ms | Allocations: 3953)
+
+
+Started GET "/salons/3" for ::1 at 2021-08-17 21:16:14 -0400
+Processing by SalonsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mSalon Load (55.8ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/salons_controller.rb:9:in `show'
+  [1m[36mService Load (35.6ms)[0m  [1m[34mSELECT "services".* FROM "services" WHERE "services"."salon_id" = $1[0m  [["salon_id", 3]]
+  ↳ app/models/salon.rb:15:in `map'
+  [1m[36mReview Load (49.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."salon_id" = $1[0m  [["salon_id", 3]]
+  ↳ app/models/salon.rb:21:in `map'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (25.64ms)
+Completed 200 OK in 1293ms (Views: 44.0ms | ActiveRecord: 289.2ms | Allocations: 12074)
+
+
+Started GET "/me" for ::1 at 2021-08-17 21:50:32 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (48.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (27.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (94.2ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (390.56ms)
+Completed 200 OK in 22014ms (Views: 344.4ms | ActiveRecord: 1884.4ms | Allocations: 5061)
+
+
+Started GET "/me" for ::1 at 2021-08-17 21:51:18 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (1.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (6.6ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (157.34ms)
+Completed 200 OK in 233ms (Views: 166.5ms | ActiveRecord: 11.3ms | Allocations: 2905)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:51:19 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (122.4ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (51.65ms)
+Completed 200 OK in 305ms (Views: 176.0ms | ActiveRecord: 122.4ms | Allocations: 2217)
+
+
+Started DELETE "/appointments/8" for ::1 at 2021-08-17 21:52:38 -0400
+Processing by AppointmentsController#destroy as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mAppointment Load (5.1ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:29:in `destroy'
+  [1m[36mTRANSACTION (125.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/appointments_controller.rb:32:in `destroy'
+  [1m[36mAppointment Destroy (151.3ms)[0m  [1m[31mDELETE FROM "appointments" WHERE "appointments"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/appointments_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (46.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/appointments_controller.rb:32:in `destroy'
+Completed 204 No Content in 501ms (ActiveRecord: 328.2ms | Allocations: 1764)
+
+
+Started GET "/me" for ::1 at 2021-08-17 21:52:47 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (12.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (43.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (79.64ms)
+Completed 200 OK in 126ms (Views: 42.1ms | ActiveRecord: 56.2ms | Allocations: 1728)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:52:48 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (7.2ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.84ms)
+Completed 200 OK in 80ms (Views: 69.3ms | ActiveRecord: 7.2ms | Allocations: 2216)
+
+
+Started GET "/salons/2" for ::1 at 2021-08-17 21:53:00 -0400
+Processing by SalonsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mSalon Load (0.6ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/salons_controller.rb:9:in `show'
+  [1m[36mService Load (14.7ms)[0m  [1m[34mSELECT "services".* FROM "services" WHERE "services"."salon_id" = $1[0m  [["salon_id", 2]]
+  ↳ app/models/salon.rb:15:in `map'
+  [1m[36mReview Load (48.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."salon_id" = $1[0m  [["salon_id", 2]]
+  ↳ app/models/salon.rb:21:in `map'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (14.9ms)
+Completed 200 OK in 283ms (Views: 17.6ms | ActiveRecord: 63.8ms | Allocations: 2436)
+
+
+Started POST "/appointments" for ::1 at 2021-08-17 21:53:12 -0400
+Processing by AppointmentsController#create as */*
+  Parameters: {"date"=>"2021-08-19", "start_time"=>"21:55", "description"=>"braids", "user_id"=>4, "salon_id"=>2, "appointment"=>{"date"=>"2021-08-19", "start_time"=>"21:55", "description"=>"braids", "user_id"=>4, "salon_id"=>2}}
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/appointments_controller.rb:9:in `create'
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `create'
+  [1m[36mSalon Load (0.5ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `create'
+  [1m[36mAppointment Create (106.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "start_time", "description", "user_id", "salon_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["date", "2021-08-19"], ["start_time", "21:55:00"], ["description", "braids"], ["user_id", 4], ["salon_id", 2], ["created_at", "2021-08-18 01:53:12.440234"], ["updated_at", "2021-08-18 01:53:12.440234"]]
+  ↳ app/controllers/appointments_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (34.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/appointments_controller.rb:9:in `create'
+[active_model_serializers] Rendered AppointmentSerializer with ActiveModelSerializers::Adapter::Attributes (4.41ms)
+Completed 201 Created in 3422ms (Views: 6.6ms | ActiveRecord: 147.0ms | Allocations: 4429)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:53:53 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (0.7ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.17ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.7ms | Allocations: 2216)
+
+
+Started GET "/appointments" for ::1 at 2021-08-17 21:53:53 -0400
+Processing by AppointmentsController#index as */*
+  [1m[36mAppointment Load (1.9ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (83.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (0.9ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (118.92ms)
+Completed 200 OK in 131ms (Views: 42.9ms | ActiveRecord: 86.8ms | Allocations: 5196)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:54:02 -0400
+Processing by SalonsController#index as */*
+Started GET "/appointments" for ::1 at 2021-08-17 21:54:02 -0400
+Processing by AppointmentsController#index as */*
+  [1m[36mSalon Load (27.5ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.12ms)
+Completed 200 OK in 86ms (Views: 57.7ms | ActiveRecord: 27.5ms | Allocations: 3234)
+
+
+  [1m[36mAppointment Load (39.9ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (2.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (95.76ms)
+Completed 200 OK in 560ms (Views: 349.6ms | ActiveRecord: 210.4ms | Allocations: 9736)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:54:08 -0400
+Started GET "/appointments" for ::1 at 2021-08-17 21:54:08 -0400
+Processing by SalonsController#index as */*
+Processing by AppointmentsController#index as */*
+  [1m[36mAppointment Load (1.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (11.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+  [1m[36mSalon Load (22.8ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.07ms)
+Completed 200 OK in 51ms (Views: 27.9ms | ActiveRecord: 22.8ms | Allocations: 4079)
+
+
+[active_model_serializers]   [1m[36mSalon Load (25.4ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (45.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (124.63ms)
+Completed 200 OK in 139ms (Views: 52.1ms | ActiveRecord: 84.4ms | Allocations: 7570)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:54:10 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (5.8ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.63ms)
+Completed 200 OK in 25ms (Views: 18.3ms | ActiveRecord: 5.8ms | Allocations: 2216)
+
+
+Started GET "/appointments" for ::1 at 2021-08-17 21:54:10 -0400
+Processing by AppointmentsController#index as */*
+  [1m[36mAppointment Load (0.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (77.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (140.8ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (271.93ms)
+Completed 200 OK in 395ms (Views: 163.7ms | ActiveRecord: 224.9ms | Allocations: 5196)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:54:19 -0400
+Processing by SalonsController#index as */*
+Started GET "/appointments" for ::1 at 2021-08-17 21:54:19 -0400
+Processing by AppointmentsController#index as */*
+  [1m[36mSalon Load (14.5ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.23ms)
+Completed 200 OK in 36ms (Views: 20.8ms | ActiveRecord: 14.5ms | Allocations: 2951)
+
+
+  [1m[36mAppointment Load (76.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (2.8ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (51.37ms)
+Completed 200 OK in 143ms (Views: 58.4ms | ActiveRecord: 84.5ms | Allocations: 7535)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:55:06 -0400
+Started GET "/appointments" for ::1 at 2021-08-17 21:55:06 -0400
+Processing by AppointmentsController#index as */*
+Processing by SalonsController#index as */*
+  [1m[36mAppointment Load (2.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+  [1m[36mSalon Load (8.9ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.38ms)
+Completed 200 OK in 29ms (Views: 19.7ms | ActiveRecord: 8.9ms | Allocations: 3072)
+
+
+[active_model_serializers]   [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (1.1ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (57.9ms)
+Completed 200 OK in 72ms (Views: 60.2ms | ActiveRecord: 11.1ms | Allocations: 7673)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:55:43 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (2.3ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.56ms)
+Completed 200 OK in 19ms (Views: 15.9ms | ActiveRecord: 2.3ms | Allocations: 2216)
+
+
+Started GET "/appointments" for ::1 at 2021-08-17 21:55:43 -0400
+Processing by AppointmentsController#index as */*
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (1.2ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (50.25ms)
+Completed 200 OK in 63ms (Views: 53.8ms | ActiveRecord: 3.1ms | Allocations: 5196)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:55:50 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (1.5ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.61ms)
+Started GET "/appointments" for ::1 at 2021-08-17 21:55:50 -0400
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 1.5ms | Allocations: 2624)
+
+
+Processing by AppointmentsController#index as */*
+  [1m[36mAppointment Load (2.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (1.5ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (30.13ms)
+Completed 200 OK in 38ms (Views: 30.1ms | ActiveRecord: 7.1ms | Allocations: 5196)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:56:29 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (84.6ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.18ms)
+Completed 200 OK in 172ms (Views: 84.5ms | ActiveRecord: 84.6ms | Allocations: 2217)
+
+
+Started GET "/me" for ::1 at 2021-08-17 21:56:31 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (2.0ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (0.6ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (44.12ms)
+Completed 200 OK in 57ms (Views: 44.0ms | ActiveRecord: 3.1ms | Allocations: 2905)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:56:32 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (3.3ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.76ms)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 3.3ms | Allocations: 2216)
+
+
+Started GET "/me" for ::1 at 2021-08-17 21:56:33 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (9.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (44.5ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (75.77ms)
+Completed 200 OK in 97ms (Views: 22.3ms | ActiveRecord: 55.6ms | Allocations: 2903)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:56:34 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (0.9ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.17ms)
+Completed 200 OK in 19ms (Views: 15.9ms | ActiveRecord: 0.9ms | Allocations: 2216)
+
+
+Started GET "/appointments" for ::1 at 2021-08-17 21:56:34 -0400
+Processing by AppointmentsController#index as */*
+  [1m[36mAppointment Load (1.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (18.4ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (49.76ms)
+Completed 200 OK in 75ms (Views: 46.1ms | ActiveRecord: 28.4ms | Allocations: 5196)
+
+
+Started GET "/me" for ::1 at 2021-08-17 21:57:00 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (1.1ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (0.6ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (29.94ms)
+Completed 200 OK in 127ms (Views: 29.3ms | ActiveRecord: 3.4ms | Allocations: 2902)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:57:02 -0400
+Processing by SalonsController#index as */*
+Started GET "/appointments" for ::1 at 2021-08-17 21:57:02 -0400
+Processing by AppointmentsController#index as */*
+  [1m[36mSalon Load (5.2ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.6ms)
+  [1m[36mAppointment Load (14.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+Completed 200 OK in 62ms (Views: 56.7ms | ActiveRecord: 5.2ms | Allocations: 2980)
+
+
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (0.5ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (51.98ms)
+Completed 200 OK in 94ms (Views: 73.6ms | ActiveRecord: 16.8ms | Allocations: 7555)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:58:09 -0400
+Processing by SalonsController#index as */*
+Started GET "/appointments" for ::1 at 2021-08-17 21:58:09 -0400
+Processing by AppointmentsController#index as */*
+  [1m[36mAppointment Load (12.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+  [1m[36mSalon Load (116.4ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.74ms)
+[active_model_serializers]   [1m[36mSalon Load (83.9ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 224ms (Views: 103.5ms | ActiveRecord: 116.4ms | Allocations: 4662)
+
+
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (195.06ms)
+Completed 200 OK in 269ms (Views: 165.8ms | ActiveRecord: 102.1ms | Allocations: 7574)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:58:12 -0400
+Processing by SalonsController#index as */*
+Started GET "/appointments?user" for ::1 at 2021-08-17 21:58:12 -0400
+Processing by AppointmentsController#index as */*
+  Parameters: {"user"=>nil}
+  [1m[36mSalon Load (8.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.66ms)
+Completed 200 OK in 71ms (Views: 62.1ms | ActiveRecord: 8.0ms | Allocations: 2955)
+
+
+  [1m[36mAppointment Load (40.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (3.2ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (79.5ms)
+Completed 200 OK in 263ms (Views: 217.2ms | ActiveRecord: 45.7ms | Allocations: 7582)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:58:16 -0400
+Processing by SalonsController#index as */*
+Started GET "/appointments?user_id" for ::1 at 2021-08-17 21:58:16 -0400
+Processing by AppointmentsController#index as */*
+  Parameters: {"user_id"=>nil}
+  [1m[36mAppointment Load (2.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+  [1m[36mSalon Load (21.5ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (14.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.54ms)
+Completed 200 OK in 117ms (Views: 94.8ms | ActiveRecord: 21.5ms | Allocations: 4698)
+
+
+[active_model_serializers]   [1m[36mSalon Load (21.5ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (196.09ms)
+Completed 200 OK in 240ms (Views: 195.6ms | ActiveRecord: 42.4ms | Allocations: 7570)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:58:18 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (4.2ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.0ms)
+Completed 200 OK in 41ms (Views: 36.7ms | ActiveRecord: 4.2ms | Allocations: 2216)
+
+
+Started GET "/appointments?user_id=" for ::1 at 2021-08-17 21:58:18 -0400
+Processing by AppointmentsController#index as */*
+  Parameters: {"user_id"=>""}
+  [1m[36mAppointment Load (0.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (47.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (12.3ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (194.81ms)
+Completed 200 OK in 212ms (Views: 148.5ms | ActiveRecord: 62.9ms | Allocations: 5196)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:58:21 -0400
+Processing by SalonsController#index as */*
+Started GET "/appointments?user_id=$" for ::1 at 2021-08-17 21:58:21 -0400
+Processing by AppointmentsController#index as */*
+  Parameters: {"user_id"=>"$"}
+  [1m[36mAppointment Load (3.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+  [1m[36mSalon Load (43.1ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+[active_model_serializers]   [1m[36mSalon Load (0.7ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.34ms)
+Completed 200 OK in 87ms (Views: 43.3ms | ActiveRecord: 43.1ms | Allocations: 5616)
+
+
+[active_model_serializers]   [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (83.44ms)
+Completed 200 OK in 100ms (Views: 86.1ms | ActiveRecord: 11.6ms | Allocations: 7536)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 21:58:32 -0400
+Processing by SalonsController#index as */*
+Started GET "/appointments?user_id=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0fQ.QLlrXBLq9_khxfWwVcaQt29YQu7HZ1zMt__YO2gsU8g" for ::1 at 2021-08-17 21:58:32 -0400
+Processing by AppointmentsController#index as */*
+  Parameters: {"user_id"=>"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0fQ.QLlrXBLq9_khxfWwVcaQt29YQu7HZ1zMt__YO2gsU8g"}
+  [1m[36mSalon Load (103.3ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.18ms)
+Completed 200 OK in 206ms (Views: 101.7ms | ActiveRecord: 103.3ms | Allocations: 3037)
+
+
+  [1m[36mAppointment Load (68.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (210.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (20.1ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (300.12ms)
+Completed 200 OK in 452ms (Views: 151.2ms | ActiveRecord: 300.8ms | Allocations: 7547)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:00:47 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (487.0ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (575.9ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1186.1ms)
+Completed 200 OK in 1498ms (Views: 144.5ms | ActiveRecord: 1071.0ms | Allocations: 2906)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:00:50 -0400
+Processing by SalonsController#index as */*
+Started GET "/appointments?user_id=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0fQ.QLlrXBLq9_khxfWwVcaQt29YQu7HZ1zMt__YO2gsU8g" for ::1 at 2021-08-17 22:00:50 -0400
+Processing by AppointmentsController#index as */*
+  Parameters: {"user_id"=>"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0fQ.QLlrXBLq9_khxfWwVcaQt29YQu7HZ1zMt__YO2gsU8g"}
+  [1m[36mSalon Load (15.2ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.65ms)
+Completed 200 OK in 76ms (Views: 58.0ms | ActiveRecord: 15.2ms | Allocations: 2891)
+
+
+  [1m[36mAppointment Load (6.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (10.2ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (165.51ms)
+Completed 200 OK in 238ms (Views: 200.5ms | ActiveRecord: 19.8ms | Allocations: 7535)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:02:04 -0400
+Started GET "/appointments?user_id=null" for ::1 at 2021-08-17 22:02:04 -0400
+Processing by AppointmentsController#index as */*
+Processing by SalonsController#index as */*
+  Parameters: {"user_id"=>"null"}
+  [1m[36mAppointment Load (3.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+  [1m[36mSalon Load (57.7ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (51.2ms)
+[active_model_serializers]   [1m[36mUser Load (105.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 245ms (Views: 177.7ms | ActiveRecord: 57.7ms | Allocations: 3330)
+
+
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (18.4ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.1ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (421.26ms)
+Completed 200 OK in 483ms (Views: 351.1ms | ActiveRecord: 128.4ms | Allocations: 7571)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:02:10 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (27.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (6.8ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (101.25ms)
+Completed 200 OK in 119ms (Views: 69.5ms | ActiveRecord: 34.4ms | Allocations: 2902)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:02:12 -0400
+Started GET "/appointments?user_id=null" for ::1 at 2021-08-17 22:02:12 -0400
+Processing by SalonsController#index as */*
+Processing by AppointmentsController#index as */*
+  Parameters: {"user_id"=>"null"}
+  [1m[36mAppointment Load (3.0ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+  [1m[36mSalon Load (16.9ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.42ms)
+[active_model_serializers]   [1m[36mUser Load (50.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 86ms (Views: 68.4ms | ActiveRecord: 16.9ms | Allocations: 3398)
+
+
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (5.9ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1486.24ms)
+Completed 200 OK in 1510ms (Views: 1444.3ms | ActiveRecord: 65.4ms | Allocations: 7584)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:02:40 -0400
+Processing by SalonsController#index as */*
+Started GET "/appointments?user_id=null" for ::1 at 2021-08-17 22:02:40 -0400
+  [1m[36mSalon Load (21.9ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+Processing by AppointmentsController#index as */*
+  Parameters: {"user_id"=>"null"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.8ms)
+Completed 200 OK in 50ms (Views: 27.4ms | ActiveRecord: 21.9ms | Allocations: 3029)
+
+
+  [1m[36mAppointment Load (48.0ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (22.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (16.7ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (61.84ms)
+Completed 200 OK in 126ms (Views: 28.6ms | ActiveRecord: 88.2ms | Allocations: 6855)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:03:06 -0400
+Processing by SalonsController#index as */*
+Started GET "/appointments?user_id=null" for ::1 at 2021-08-17 22:03:06 -0400
+Processing by AppointmentsController#index as */*
+  Parameters: {"user_id"=>"null"}
+  [1m[36mSalon Load (18.2ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.12ms)
+Completed 200 OK in 57ms (Views: 38.1ms | ActiveRecord: 18.2ms | Allocations: 3028)
+
+
+  [1m[36mAppointment Load (6.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (29.7ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (60.63ms)
+Completed 200 OK in 91ms (Views: 45.5ms | ActiveRecord: 45.6ms | Allocations: 7535)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:03:21 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (55.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (84.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (1.9ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (108.38ms)
+Completed 200 OK in 202ms (Views: 22.9ms | ActiveRecord: 141.2ms | Allocations: 2902)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:03:22 -0400
+Processing by SalonsController#index as */*
+Started GET "/appointments?user_id=null" for ::1 at 2021-08-17 22:03:22 -0400
+Processing by AppointmentsController#index as */*
+  Parameters: {"user_id"=>"null"}
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (2.9ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (34.05ms)
+Completed 200 OK in 43ms (Views: 24.2ms | ActiveRecord: 18.0ms | Allocations: 5196)
+
+
+  [1m[36mSalon Load (1.3ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.11ms)
+Completed 200 OK in 94ms (Views: 92.8ms | ActiveRecord: 1.3ms | Allocations: 8357)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:03:55 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (46.4ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.45ms)
+Completed 200 OK in 185ms (Views: 136.0ms | ActiveRecord: 46.4ms | Allocations: 2216)
+
+
+Started GET "/appointments?user_id=null" for ::1 at 2021-08-17 22:03:55 -0400
+Processing by AppointmentsController#index as */*
+  Parameters: {"user_id"=>"null"}
+  [1m[36mAppointment Load (8.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (159.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (36.2ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (15.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (448.31ms)
+Completed 200 OK in 522ms (Views: 301.5ms | ActiveRecord: 219.6ms | Allocations: 5196)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:03:58 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (7.7ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.64ms)
+Completed 200 OK in 23ms (Views: 14.9ms | ActiveRecord: 7.7ms | Allocations: 2429)
+
+
+Started GET "/appointments?user_id=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0fQ.QLlrXBLq9_khxfWwVcaQt29YQu7HZ1zMt__YO2gsU8g" for ::1 at 2021-08-17 22:03:58 -0400
+Processing by AppointmentsController#index as */*
+  Parameters: {"user_id"=>"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0fQ.QLlrXBLq9_khxfWwVcaQt29YQu7HZ1zMt__YO2gsU8g"}
+  [1m[36mAppointment Load (0.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (6.2ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (46.61ms)
+Completed 200 OK in 56ms (Views: 36.5ms | ActiveRecord: 18.9ms | Allocations: 5196)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:04:06 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (13.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (2.9ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (38.36ms)
+Completed 200 OK in 50ms (Views: 23.2ms | ActiveRecord: 16.4ms | Allocations: 2902)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:04:08 -0400
+Processing by SalonsController#index as */*
+Started GET "/appointments?user_id=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0fQ.QLlrXBLq9_khxfWwVcaQt29YQu7HZ1zMt__YO2gsU8g" for ::1 at 2021-08-17 22:04:08 -0400
+Processing by AppointmentsController#index as */*
+  Parameters: {"user_id"=>"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0fQ.QLlrXBLq9_khxfWwVcaQt29YQu7HZ1zMt__YO2gsU8g"}
+  [1m[36mSalon Load (42.3ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.92ms)
+Completed 200 OK in 53ms (Views: 9.8ms | ActiveRecord: 42.3ms | Allocations: 3038)
+
+
+  [1m[36mAppointment Load (113.0ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (4.1ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (32.55ms)
+Completed 200 OK in 156ms (Views: 32.1ms | ActiveRecord: 123.1ms | Allocations: 7535)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:05:38 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (1.8ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.29ms)
+Completed 200 OK in 38ms (Views: 33.8ms | ActiveRecord: 1.8ms | Allocations: 2216)
+
+
+Started GET "/appointments?token=[FILTERED]" for ::1 at 2021-08-17 22:05:38 -0400
+Processing by AppointmentsController#index as */*
+  Parameters: {"token"=>"[FILTERED]"}
+  [1m[36mAppointment Load (2.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (1.1ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Salon Load (0.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (57.37ms)
+Completed 200 OK in 73ms (Views: 63.0ms | ActiveRecord: 6.1ms | Allocations: 5196)
+
+
+Started DELETE "/appointments/10" for ::1 at 2021-08-17 22:06:02 -0400
+Processing by AppointmentsController#destroy as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mAppointment Load (36.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:29:in `destroy'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/appointments_controller.rb:32:in `destroy'
+  [1m[36mAppointment Destroy (46.3ms)[0m  [1m[31mDELETE FROM "appointments" WHERE "appointments"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/appointments_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (42.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/appointments_controller.rb:32:in `destroy'
+Completed 204 No Content in 259ms (ActiveRecord: 126.4ms | Allocations: 1767)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:06:19 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (43.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (62.18ms)
+Completed 200 OK in 79ms (Views: 24.0ms | ActiveRecord: 44.5ms | Allocations: 1727)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:06:20 -0400
+Processing by SalonsController#index as */*
+Started GET "/appointments?token=[FILTERED]" for ::1 at 2021-08-17 22:06:20 -0400
+Processing by AppointmentsController#index as */*
+  [1m[36mSalon Load (16.1ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  Parameters: {"token"=>"[FILTERED]"}
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.95ms)
+Completed 200 OK in 50ms (Views: 33.1ms | ActiveRecord: 16.1ms | Allocations: 3046)
+
+
+  [1m[36mAppointment Load (14.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mSalon Load (6.4ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (35.93ms)
+Completed 200 OK in 69ms (Views: 44.0ms | ActiveRecord: 23.8ms | Allocations: 4899)
+
+
+Started GET "/appointments?token=[FILTERED]" for ::1 at 2021-08-17 22:06:57 -0400
+Started GET "/salons" for ::1 at 2021-08-17 22:06:57 -0400
+Processing by AppointmentsController#index as */*
+  Parameters: {"token"=>"[FILTERED]"}
+Processing by SalonsController#index as */*
+  [1m[36mAppointment Load (28.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:5:in `index'
+  [1m[36mSalon Load (37.6ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.57ms)
+[active_model_serializers]   [1m[36mUser Load (26.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+Completed 200 OK in 116ms (Views: 78.3ms | ActiveRecord: 37.6ms | Allocations: 3656)
+
+
+[active_model_serializers]   [1m[36mSalon Load (4.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/appointments_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (77.66ms)
+Completed 200 OK in 148ms (Views: 85.5ms | ActiveRecord: 59.6ms | Allocations: 5500)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:15:47 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (48.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.81ms)
+Completed 200 OK in 1187ms (Views: 1140.0ms | ActiveRecord: 452.5ms | Allocations: 4291)
+
+
+Started GET "/salons/2" for ::1 at 2021-08-17 22:35:40 -0400
+Processing by SalonsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mSalon Load (3.1ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/salons_controller.rb:9:in `show'
+  [1m[36mService Load (2.9ms)[0m  [1m[34mSELECT "services".* FROM "services" WHERE "services"."salon_id" = $1[0m  [["salon_id", 2]]
+  ↳ app/models/salon.rb:15:in `map'
+  [1m[36mReview Load (28.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."salon_id" = $1[0m  [["salon_id", 2]]
+  ↳ app/models/salon.rb:21:in `map'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (15.97ms)
+Completed 200 OK in 831ms (Views: 36.3ms | ActiveRecord: 135.0ms | Allocations: 18665)
+
+
+Started POST "/appointments" for ::1 at 2021-08-17 22:35:57 -0400
+  
+SyntaxError (/Users/shev/Development/code/Mod5/Capstone-Project/backend_api/app/controllers/appointments_controller.rb:19: syntax error, unexpected ')'
+...d_by(id: params[:id], user_id:)
+...                              ^):
+  
+app/controllers/appointments_controller.rb:19: syntax error, unexpected ')'
+app/controllers/appointments_controller.rb:19: syntax error, unexpected ')'
+Started POST "/appointments" for ::1 at 2021-08-17 22:37:09 -0400
+Processing by AppointmentsController#create as */*
+  Parameters: {"date"=>"2021-08-20", "start_time"=>"22:39", "description"=>"braids", "user_id"=>4, "salon_id"=>2, "appointment"=>{"date"=>"2021-08-20", "start_time"=>"22:39", "description"=>"braids", "user_id"=>4, "salon_id"=>2}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/appointments_controller.rb:9:in `create'
+  [1m[36mUser Load (23.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `create'
+  [1m[36mSalon Load (0.5ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `create'
+  [1m[36mAppointment Create (854.8ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "start_time", "description", "user_id", "salon_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["date", "2021-08-20"], ["start_time", "22:39:00"], ["description", "braids"], ["user_id", 4], ["salon_id", 2], ["created_at", "2021-08-18 02:37:10.535855"], ["updated_at", "2021-08-18 02:37:10.535855"]]
+  ↳ app/controllers/appointments_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (128.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/appointments_controller.rb:9:in `create'
+[active_model_serializers] Rendered AppointmentSerializer with ActiveModelSerializers::Adapter::Attributes (23.1ms)
+Completed 201 Created in 1474ms (Views: 31.9ms | ActiveRecord: 1366.7ms | Allocations: 22513)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:37:30 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (5.1ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (5.0ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (242.52ms)
+Completed 200 OK in 430ms (Views: 243.2ms | ActiveRecord: 15.7ms | Allocations: 3350)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:37:34 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (14.9ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.9ms)
+Completed 200 OK in 234ms (Views: 216.9ms | ActiveRecord: 14.9ms | Allocations: 2254)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:38:29 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (4.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (1.5ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (132.28ms)
+Completed 200 OK in 253ms (Views: 143.5ms | ActiveRecord: 9.1ms | Allocations: 2902)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:38:31 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (10.7ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.18ms)
+Completed 200 OK in 91ms (Views: 79.6ms | ActiveRecord: 10.7ms | Allocations: 2217)
+
+
+Started DELETE "/appointments/4/11" for ::1 at 2021-08-17 22:38:33 -0400
+Processing by AppointmentsController#destroy as */*
+  Parameters: {"user"=>"4", "appointment"=>"11"}
+Completed 500 Internal Server Error in 350ms (ActiveRecord: 0.0ms | Allocations: 294)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column appointments.appointment_id does not exist
+LINE 1: ...intments" WHERE "appointments"."user_id" = $1 AND "appointme...
+                                                             ^
+):
+  
+app/controllers/appointments_controller.rb:29:in `destroy'
+Started DELETE "/appointments/4/11" for ::1 at 2021-08-17 22:39:44 -0400
+Processing by AppointmentsController#destroy as */*
+  Parameters: {"user"=>"4", "appointment"=>"11"}
+  [1m[36mAppointment Load (0.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:29:in `destroy'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/appointments_controller.rb:32:in `destroy'
+  [1m[36mAppointment Destroy (72.1ms)[0m  [1m[31mDELETE FROM "appointments" WHERE "appointments"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/appointments_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (74.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/appointments_controller.rb:32:in `destroy'
+Completed 204 No Content in 1562ms (ActiveRecord: 1271.5ms | Allocations: 7275)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:40:09 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (123.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (47.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (148.57ms)
+Completed 200 OK in 1796ms (Views: 115.1ms | ActiveRecord: 495.6ms | Allocations: 8700)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:40:12 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (1.3ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.92ms)
+Completed 200 OK in 155ms (Views: 67.0ms | ActiveRecord: 57.7ms | Allocations: 9094)
+
+
+Started GET "/salons/2" for ::1 at 2021-08-17 22:44:33 -0400
+Processing by SalonsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mSalon Load (3.2ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/salons_controller.rb:9:in `show'
+  [1m[36mService Load (64.4ms)[0m  [1m[34mSELECT "services".* FROM "services" WHERE "services"."salon_id" = $1[0m  [["salon_id", 2]]
+  ↳ app/models/salon.rb:15:in `map'
+  [1m[36mReview Load (40.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."salon_id" = $1[0m  [["salon_id", 2]]
+  ↳ app/models/salon.rb:21:in `map'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.64ms)
+Completed 200 OK in 813ms (Views: 19.0ms | ActiveRecord: 328.6ms | Allocations: 12397)
+
+
+Started POST "/appointments" for ::1 at 2021-08-17 22:44:45 -0400
+Processing by AppointmentsController#create as */*
+  Parameters: {"date"=>"2021-08-25", "start_time"=>"22:48", "description"=>"braids", "user_id"=>4, "salon_id"=>2, "appointment"=>{"date"=>"2021-08-25", "start_time"=>"22:48", "description"=>"braids", "user_id"=>4, "salon_id"=>2}}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/appointments_controller.rb:9:in `create'
+  [1m[36mUser Load (12.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `create'
+  [1m[36mSalon Load (6.7ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `create'
+  [1m[36mAppointment Create (88.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "start_time", "description", "user_id", "salon_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["date", "2021-08-25"], ["start_time", "22:48:00"], ["description", "braids"], ["user_id", 4], ["salon_id", 2], ["created_at", "2021-08-18 02:44:45.337985"], ["updated_at", "2021-08-18 02:44:45.337985"]]
+  ↳ app/controllers/appointments_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (48.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/appointments_controller.rb:9:in `create'
+[active_model_serializers] Rendered AppointmentSerializer with ActiveModelSerializers::Adapter::Attributes (13.55ms)
+Completed 201 Created in 404ms (Views: 35.3ms | ActiveRecord: 156.5ms | Allocations: 4980)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:45:31 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (14.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (48.9ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (86.2ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (968.5ms)
+Completed 200 OK in 1899ms (Views: 866.4ms | ActiveRecord: 149.5ms | Allocations: 2957)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:45:38 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (2.2ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (249.5ms)
+Completed 200 OK in 1685ms (Views: 1636.1ms | ActiveRecord: 2.2ms | Allocations: 2221)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:49:14 -0400
+Processing by UsersController#me as */*
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate'
+[active_model_serializers]   [1m[36mAppointment Load (269.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers]   [1m[36mSalon Load (107.8ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:41:in `me'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1595.54ms)
+Completed 200 OK in 1882ms (Views: 1246.8ms | ActiveRecord: 383.1ms | Allocations: 2907)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:49:18 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (15.8ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (141.28ms)
+Completed 200 OK in 337ms (Views: 315.5ms | ActiveRecord: 15.8ms | Allocations: 2216)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:51:22 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.7ms)
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 47ms (Views: 37.0ms | ActiveRecord: 0.0ms | Allocations: 203)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:51:24 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (11.3ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (182.97ms)
+Completed 200 OK in 996ms (Views: 971.1ms | ActiveRecord: 11.3ms | Allocations: 2217)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:52:11 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 203)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:52:12 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (36.8ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1147.49ms)
+Completed 200 OK in 1226ms (Views: 1186.9ms | ActiveRecord: 36.8ms | Allocations: 2221)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:53:08 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.4ms)
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 203)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:53:53 -0400
+Started GET "/me" for ::1 at 2021-08-17 22:53:53 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.76ms)
+Processing by SalonsController#index as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 33ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 484)
+
+
+  [1m[36mSalon Load (106.7ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.7ms)
+Completed 200 OK in 198ms (Views: 85.0ms | ActiveRecord: 106.7ms | Allocations: 2449)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:53:57 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 204)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:53:57 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 203)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:56:05 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.13ms)
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 16ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 203)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:56:14 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 7ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 203)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:56:19 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.21ms)
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 10ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 203)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:56:40 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (13.23ms)
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 24ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 203)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:56:49 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.19ms)
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 203)
+
+
+Started GET "/me" for ::1 at 2021-08-17 22:57:05 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.0ms)
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 19ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 203)
+
+
+Started POST "/login" for ::1 at 2021-08-17 22:57:13 -0400
+Processing by UsersController#login as */*
+  Parameters: {"user"=>{"user_name"=>"Shev", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (53.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "Shev"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.17ms)
+Completed 401 Unauthorized in 252ms (Views: 0.8ms | ActiveRecord: 53.9ms | Allocations: 721)
+
+
+Started POST "/login" for ::1 at 2021-08-17 22:57:24 -0400
+Processing by UsersController#login as */*
+  Parameters: {"user"=>{"user_name"=>"Neeza", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "Neeza"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `login'
+[active_model_serializers]   [1m[36mAppointment Load (37.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:25:in `login'
+[active_model_serializers]   [1m[36mSalon Load (38.3ms)[0m  [1m[34mSELECT "salons".* FROM "salons" WHERE "salons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:25:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (207.09ms)
+Completed 201 Created in 596ms (Views: 134.3ms | ActiveRecord: 79.6ms | Allocations: 2923)
+
+
+Started GET "/salons" for ::1 at 2021-08-17 22:57:25 -0400
+Processing by SalonsController#index as */*
+  [1m[36mSalon Load (2.4ms)[0m  [1m[34mSELECT "salons".* FROM "salons"[0m
+  ↳ app/controllers/salons_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.53ms)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 2.4ms | Allocations: 2216)
+
+
+Started GET "/me" for ::1 at 2021-08-17 23:01:16 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.72ms)
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 203)
+
+
+Started GET "/me" for ::1 at 2021-08-17 23:10:46 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.74ms)
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 65ms (Views: 45.1ms | Allocations: 203)
+
+
+Started GET "/me" for ::1 at 2021-08-17 23:13:22 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.45ms)
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 35ms (Views: 21.7ms | Allocations: 203)
+
+
+Started GET "/me" for ::1 at 2021-08-17 23:13:47 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.82ms)
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 52ms (Views: 26.0ms | Allocations: 204)
+
+
+Started GET "/me" for ::1 at 2021-08-17 23:14:59 -0400
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.15ms)
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 53ms (Views: 23.5ms | Allocations: 203)
+
+
