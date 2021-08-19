@@ -1,5 +1,5 @@
 class SalonsController < ApplicationController
-
+    before_action :authenticate, only: [:show, :index]
     def index
         salons = Salon.all
         render json: salons

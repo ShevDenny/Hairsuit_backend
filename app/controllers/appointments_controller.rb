@@ -1,4 +1,6 @@
 class AppointmentsController < ApplicationController
+    before_action :authenticate, only: [:create, :destroy, :index, :show]
+
 
     def index
         appointments = Appointment.all
@@ -21,7 +23,7 @@ class AppointmentsController < ApplicationController
         if appointment
             render json: appointment.user_salon_info
         else
-            render json: {error: "Appointment not found"}
+            render json: {error: "Appointment not found"}, status: 404
         end
     end
 

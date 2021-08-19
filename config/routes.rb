@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :reviews
+  resources :reviews, only: [:index, :show, :create]
   resources :appointments 
   resources :services
   resources :salons
