@@ -21,7 +21,7 @@ puts 'Creating Salon...🎀'
 salon1 = Salon.create(
     name: 'The Salon By Ursula Stephen ', 
     location: '66 Lafayette Ave Brooklyn, NY 11217', 
-    specialize_in: ['color', 'haircut', 'locs', 'blowouts', 'natural hair styling'], 
+    specialize_in: ['color', 'haircut', 'locs', 'blowouts', 'natural hair styling', 'curls'], 
     image: 'https://static.wixstatic.com/media/449eb6_969a324320454fd8a7f4a1ac753aeedc.jpg/v1/fill/w_470,h_577,al_c,q_80,usm_0.66_1.00_0.01/449eb6_969a324320454fd8a7f4a1ac753aeedc.webp', 
     description: 'Ursula Stephen, Celebrity Hairstylist and New Image Beauty Expert is a phenomenon and the hairstylist of choice for many of today’s high profile and fashion-forward celebrities, including Rihanna, Mary J. Blige, Kerry Washington and Laverne Cox just to name a few. 
      
@@ -33,7 +33,7 @@ salon1 = Salon.create(
 salon2 = Salon.create(
     name: 'Broome Street Society', 
     location: '407 Broome Street New York, NY 10013', 
-    specialize_in: ['color', 'haircut', 'twists', 'blowouts', 'braids', 'highlights'],
+    specialize_in: ['color', 'haircut', 'twists', 'blowouts', 'braids', 'highlights', 'styling'],
     image:'https://www.galuxsee.com/wp-content/uploads/2017/04/Broome-Street-Society-20170414-Danielle-Jonas-Instagram-Map.jpg', 
     description: 'We are an upscale, green, accessible, full service salon offering a wide portfolio of services including hair styling, coloring, cutting, and extension work. 
     The staff at Broome Street Society is committed to exceptional service provided in a professional  and sustainable environment.'
@@ -50,7 +50,7 @@ salon3 = Salon.create(
     salon4 = Salon.create(
         name: 'Mona Baltazar', 
         location: '526 7th Avenue, Floor 5 New York, NY 10018', 
-        specialize_in: ['color', 'haircut', 'blowouts', 'single process', 'natural hair styling'],
+        specialize_in: ['color', 'haircut', 'blowouts', 'single process', 'natural hair styling', 'curls'],
     image: 'https://static.wixstatic.com/media/a7c72a_dc7cc1bcba424ac880399a1fd337061e~mv2_d_3336_5008_s_4_2.jpg/v1/crop/x_0,y_1117,w_3336,h_2774/fill/w_480,h_413,al_c,q_80,usm_0.66_1.00_0.01/MONACUTS_2017-7320.webp', 
     description: 'Mona Baltazar is a New York City based hair stylist from the Phillipines. She has over 15 years of experience in the industry, and a degree in Fashion Design from the Fashion Institute of Technology. Her goal is to allow her clients to embrace their hair’s natural beauty. Although she cuts all textures, she specializes in enhancing the potential of curly hair. Having straight hair allows her to see curls from an outsider’s perspective, working together with her clients to enhance the beauty that’s already there.'
     )

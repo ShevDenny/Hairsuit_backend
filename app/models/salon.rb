@@ -14,14 +14,17 @@ class Salon < ApplicationRecord
             image: self.image,
             services: self.services.map do |service|
                 {
+                    id: service.id,
                     name: service.name,
-                    price: service.price,
+                    price: service.price
                 }
             end,
             reviews: self.reviews.map do |review|
                 {
+                    id: review.id,
                     rating: review.rating,
-                    comment: review.comment
+                    comment: review.comment,
+                    user_id: review.user.id
                 }
             end
         }

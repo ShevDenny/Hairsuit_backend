@@ -1,5 +1,5 @@
 class ReviewsController < ApplicationController
-    before_action :authenticate, only: [:index, :show, :create, :update]
+    before_action :authenticate, only: [:index, :show, :create, :update, :destroy]
 
     def index
         reviews = Review.all
@@ -35,9 +35,21 @@ class ReviewsController < ApplicationController
         render json: review
     end
 
+    def destroy
+        review = Review.find_by(id:params[:id])
+
+        if review
+            review.destroy
+            head :no_content
+        else 
+            render json: {error: "Review not found"}, status: 404
+        end 
+
+    end
+
     private
 
     def review_params
-        params.permit(:comment, :rating, :user_id, :salon_id)
+        params.require(:review).permit(:comment, :rating, :user_id, :salon_id)
     end
 end
