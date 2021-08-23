@@ -1,8 +1,9 @@
 class ReviewsController < ApplicationController
-    before_action :authenticate, only: [:index, :show, :create, :update, :destroy]
-
+    before_action :authenticate, only: [:create, :update, :destroy]
+    # :index, :show,
     def index
         reviews = Review.all
+
         render json: reviews
     end
 
@@ -18,9 +19,10 @@ class ReviewsController < ApplicationController
 
     def show
         review = Review.find_by(id: params[:id])
+        review_photo = rails_blob_path(review.review_photo)
 
         if review
-            render json: review
+            render json: {review: review, review_photo: review_photo}
         else
             render json: {error: "Review not found"}, status: 404
         end
@@ -50,6 +52,6 @@ class ReviewsController < ApplicationController
     private
 
     def review_params
-        params.require(:review).permit(:comment, :rating, :cover_picture, :user_id, :salon_id)
+        params.require(:review).permit(:comment, :rating, :review_photo, :user_id, :salon_id)
     end
 end

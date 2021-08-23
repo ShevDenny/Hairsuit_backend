@@ -250,12 +250,18 @@ Appointment.create(date: '2021-08-25' , start_time: '10:30', end_time: '11:30', 
 Appointment.create(date: '2021-08-27', start_time: '1:30', end_time: '2:30', description: "Need a cut", user_id: user2.id, salon_id: salon2.id)
 
 puts 'Creating Review...📝'
-Review.create(
+review1 = Review.create(
     rating: 5, 
     comment: 'The cozy space is all exposed brick and oversized mirrors, and she’s always got R&B jams playing. This spot specializes in silk presses — look on any stylist’s station and you’ll see a flat iron and hot comb laid side by side — and weave installations. Ursula is also a master at cuts. She can give you anything, from a blunt bob to a textured pixie and even feathery layers.', 
     salon_id: salon1.id, 
     user_id: user1.id
     )
+
+review1.review_photo.attach(
+    io: File.open('./public/review_photos/hair-pic.jpeg'),
+    filename: 'hair-pic.jpeg', 
+    content_type: 'application/jpeg'
+)
 Review.create(
     rating: 4, 
     comment: "I discovered Reece from a friend of mine who worked with her for an editorial piece. I have a head of barely-there tapered curls that I adore and a hairstylist I feel 100% comfortable trying new things with. Not only does Reece know how to care for curls, she also knows how to make her clients fall in love with their hair.", 
