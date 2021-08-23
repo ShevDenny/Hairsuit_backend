@@ -6,4 +6,6 @@ class Review < ApplicationRecord
   validates :rating, inclusion: 0..5
   validates :comment, length: {maximum: 400}
 
+  has_one_attached :cover_picture
+
 end
