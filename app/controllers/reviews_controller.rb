@@ -1,6 +1,8 @@
 class ReviewsController < ApplicationController
+    
     before_action :authenticate, only: [:create, :update, :destroy]
-    # :index, :show,
+
+    
     def index
         reviews = Review.all
 
@@ -32,9 +34,10 @@ class ReviewsController < ApplicationController
     def update
         review = Review.find_by(id:params[:id])
 
-        review.update(review_params)
+        review.update(review_photo: params[:review_photo])
+        review_photo = rails_blob_path(review.review_photo)
 
-        render json: review
+        render json: {review: review, review_photo: review_photo}
     end
 
     def destroy
@@ -52,6 +55,6 @@ class ReviewsController < ApplicationController
     private
 
     def review_params
-        params.require(:review).permit(:comment, :rating, :review_photo, :user_id, :salon_id)
+        params.require(:review).permit(:comment, :rating, :user_id, :salon_id)
     end
 end

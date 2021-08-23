@@ -24,8 +24,8 @@ class Salon < ApplicationRecord
                     id: review.id,
                     rating: review.rating,
                     comment: review.comment,
-                    user_id: review.user.id,
-                    review_photo: review.review_photo
+                    user_id: review.user.id
+                    # review_photo: review.review_photo
                 }
             end
         }
