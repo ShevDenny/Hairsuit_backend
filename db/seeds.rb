@@ -262,58 +262,102 @@ review1.review_photo.attach(
     filename: 'hair-pic.jpeg', 
     content_type: 'application/jpeg'
 )
-Review.create(
+
+review2 = Review.create(
     rating: 4, 
     comment: "I discovered Reece from a friend of mine who worked with her for an editorial piece. I have a head of barely-there tapered curls that I adore and a hairstylist I feel 100% comfortable trying new things with. Not only does Reece know how to care for curls, she also knows how to make her clients fall in love with their hair.", 
-    salon_id: salon2.id, 
-    user_id: user2.id
+    salon_id: salon1.id, 
+    user_id: user1.id
     )
+    
+review2.review_photo.attach(
+    io: File.open('./public/review_photos/hair-pic.jpeg'),
+    filename: 'hair-pic.jpeg', 
+    content_type: 'application/jpeg'
+)
 
-Review.create(
+review3 = Review.create(
     rating: 5, 
     comment: "Candace starts off each appointment with a consultation to get an idea of what you want, and she'll give you her honest opinion on what may (or may not) work with your texture. She's trained in cutting curly hair so that the shape is tailored specifically to your face and style. I’ve left every appointment satisfied with my bouncy, healthy curls.", 
     salon_id: salon3.id, 
     user_id: user2.id
     )
 
-Review.create(
+review3.review_photo.attach(
+    io: File.open('./public/review_photos/hair-pic.jpeg'),
+    filename: 'hair-pic.jpeg', 
+    content_type: 'application/jpeg'
+)
+
+review4 = Review.create(
     rating: 5, 
     comment: "Mona speaks to you beforehand so that you're both on the same page before the scissors come out. I never wondered, 'Omg, what is she doing now?' Overall, she gave me exactly what I was looking for. She even followed up with me and messaged me on Instagram after the haircut to see how I was adjusting to my new look. Now, I can't imagine going anywhere else.", 
     salon_id: salon4.id, 
     user_id: user3.id
     )
-
-Review.create(
-    rating: 5, 
-    comment: "I found Jaxcee on Instagram and saw that she frequently colors curls, so I took a chance. Jackie took my jet-black hair to a warm blonde shade in two sessions. I loved my hair, and I haven't experienced any damage or breakage since my appointment. My color looks extremely natural and there are no harsh lines. If Jaxcee's doing your color, know that your curls are in good hands.", 
-    salon_id: salon5.id, 
-    user_id: user1.id
+    
+review4.review_photo.attach(
+    io: File.open('./public/review_photos/hair-pic.jpeg'),
+    filename: 'hair-pic.jpeg', 
+    content_type: 'application/jpeg'
+)
+    review5 = Review.create(
+        rating: 5, 
+        comment: "I found Jaxcee on Instagram and saw that she frequently colors curls, so I took a chance. Jackie took my jet-black hair to a warm blonde shade in two sessions. I loved my hair, and I haven't experienced any damage or breakage since my appointment. My color looks extremely natural and there are no harsh lines. If Jaxcee's doing your color, know that your curls are in good hands.", 
+        salon_id: salon5.id, 
+        user_id: user1.id
+        )
+    review5.review_photo.attach(
+        io: File.open('./public/review_photos/hair-pic.jpeg'),
+        filename: 'hair-pic.jpeg', 
+        content_type: 'application/jpeg'
     )
 
-Review.create(
-    rating: 5, 
-    comment: "Sitting in her chair felt like being around an old friend. She has such an amazing soul and, not to mention, she's super talented with curly hair. It's going on 3 years now that I've been going to 5 Salon and Spa, and I will forever be a loyal client.", 
-    salon_id: salon6.id, 
-    user_id: user2.id
+    review6 = Review.create(
+        rating: 5, 
+        comment: "Sitting in her chair felt like being around an old friend. She has such an amazing soul and, not to mention, she's super talented with curly hair. It's going on 3 years now that I've been going to 5 Salon and Spa, and I will forever be a loyal client.", 
+        salon_id: salon6.id, 
+        user_id: user2.id
+        )
+    review6.review_photo.attach(
+        io: File.open('./public/review_photos/hair-pic.jpeg'),
+        filename: 'hair-pic.jpeg', 
+        content_type: 'application/jpeg'
     )
-
-Review.create(
-    rating: 4, 
-    comment: "One of the best salons in town and it's stuck around for a reason. Has a welcoming ambiance.", 
-    salon_id: salon7.id, 
-    user_id: user3.id
+            
+    review7 = Review.create(
+        rating: 4, 
+        comment: "One of the best salons in town and it's stuck around for a reason. Has a welcoming ambiance.", 
+        salon_id: salon7.id, 
+        user_id: user3.id
+        )
+    review7.review_photo.attach(
+        io: File.open('./public/review_photos/hair-pic.jpeg'),
+        filename: 'hair-pic.jpeg', 
+        content_type: 'application/jpeg'
     )
-
-Review.create(
-    rating: 5, 
-    comment: "At Spoke & Weal Soho, you don’t tell Master Stylist Kelsy Osterman the exact length you’re going for—she lets your hair's natural texture dictate that for you instead.  Best hair makeover!", 
-    salon_id: salon8.id, 
-    user_id: user4.id
+                
+    review8 = Review.create(
+        rating: 5, 
+        comment: "At Spoke & Weal Soho, you don’t tell Master Stylist Kelsy Osterman the exact length you’re going for—she lets your hair's natural texture dictate that for you instead.  Best hair makeover!", 
+        salon_id: salon8.id, 
+        user_id: user4.id
     )
-
-Review.create(
-    rating: 3, 
-    comment: "F&J embraces fun and community and prioritizes salon culture. We love that their pricing is uniquely based on hair length and service difficulty (rather than gender).", 
-    salon_id: salon9.id, 
-    user_id: user3.id
+    review8.review_photo.attach(
+        io: File.open('./public/review_photos/hair-pic.jpeg'),
+        filename: 'hair-pic.jpeg', 
+        content_type: 'application/jpeg'
+    )
+    
+    review9 = Review.create(
+        rating: 3, 
+        comment: "F&J embraces fun and community and prioritizes salon culture. We love that their pricing is uniquely based on hair length and service difficulty (rather than gender).", 
+        salon_id: salon9.id, 
+        user_id: user3.id
+        )
+        
+    review9.review_photo.attach(
+        io: File.open('./public/review_photos/hair-pic.jpeg'),
+        filename: 'hair-pic.jpeg', 
+        content_type: 'application/jpeg'
     )

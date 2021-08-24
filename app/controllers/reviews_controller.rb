@@ -5,7 +5,22 @@ class ReviewsController < ApplicationController
     
     def index
         reviews = Review.all
-        render json: reviews
+        rev_with_photo = reviews.map do |rev| 
+            {
+                review: {
+                    id: rev.id,
+                    rating: rev.rating,
+                    comment: rev.comment,
+                    user_id: rev.user_id,
+                    salon_id: rev.salon_id
+                },
+                user: rev.user,
+                salon: rev.salon,
+                review_photo: rails_blob_path(rev.review_photo)
+            }
+        end 
+
+        render json: rev_with_photo
     end
 
     def create
@@ -24,7 +39,7 @@ class ReviewsController < ApplicationController
 
         if review
             # render json: review
-            render json: {review: review, review_photo: review_photo}
+            render json: {review: review, review_photo: review_photo, user: review.user, salon: review.salon}
         else
             render json: {error: "Review not found"}, status: 404
         end
@@ -32,13 +47,13 @@ class ReviewsController < ApplicationController
     end
 
     def update
-        review = Review.find_by(id:params[:id])
+        review = Review.find_by(id: params[:id])
 
         review.update(review_photo: params[:review_photo])
         review_photo = rails_blob_path(review.review_photo)
         # review.update(review_photo: review_photo)
 
-        render json: {review: review, review_photo: review_photo}
+        render json: {review: review, review_photo: review_photo, user: review.user, salon: review.salon}
     end
 
     def destroy
@@ -56,6 +71,6 @@ class ReviewsController < ApplicationController
     private
 
     def review_params
-        params.require(:review).permit(:comment, :rating, :review_photo, :user_id, :salon_id)
+        params.require(:review).permit(:comment, :user_id, :salon_id)
     end
 end
