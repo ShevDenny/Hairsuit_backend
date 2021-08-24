@@ -5,7 +5,6 @@ class ReviewsController < ApplicationController
     
     def index
         reviews = Review.all
-
         render json: reviews
     end
 
@@ -24,6 +23,7 @@ class ReviewsController < ApplicationController
         review_photo = rails_blob_path(review.review_photo)
 
         if review
+            # render json: review
             render json: {review: review, review_photo: review_photo}
         else
             render json: {error: "Review not found"}, status: 404
@@ -36,6 +36,7 @@ class ReviewsController < ApplicationController
 
         review.update(review_photo: params[:review_photo])
         review_photo = rails_blob_path(review.review_photo)
+        # review.update(review_photo: review_photo)
 
         render json: {review: review, review_photo: review_photo}
     end
@@ -55,6 +56,6 @@ class ReviewsController < ApplicationController
     private
 
     def review_params
-        params.require(:review).permit(:comment, :rating, :user_id, :salon_id)
+        params.require(:review).permit(:comment, :rating, :review_photo, :user_id, :salon_id)
     end
 end
