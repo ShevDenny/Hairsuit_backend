@@ -15,6 +15,13 @@ user1 = User.create(name: "Shevon", user_name: "Shev", password: "1234567", emai
 user2 = User.create(name: "Corletta", user_name: "Letta", password: "1234567", email: "c@d.com", admin: false)
 user3 = User.create(name: "Justin", user_name: "Jus", password: "1234567", email: "j@m.com", admin: false)
 user4 = User.create(name: "Shineeza", user_name: "Neeza", password: "1234567", email: "sc@d.com", admin: false)
+user5 = User.create(name: "Becca", user_name: "Becky", password: "1234567", email: "beck@y.com", admin: false)
+user6 = User.create(name: "Allison", user_name: "Ally", password: "1234567", email: "All@y.com", admin: false)
+user7 = User.create(name: "Jan", user_name: "Jan", password: "1234567", email: "jan@y.com", admin: false)
+user8 = User.create(name: "Ashley", user_name: "Ashley", password: "1234567", email: "Ash@y.com", admin: false)
+user9 = User.create(name: "Susan", user_name: "Sue", password: "1234567", email: "Sue@y.com", admin: false)
+user10 = User.create(name: "Crystal", user_name: "Chris", password: "1234567", email: "chris@y.com", admin: false)
+
 
 
 puts 'Creating Salon...🎀'
@@ -43,11 +50,11 @@ salon3 = Salon.create(
     name: 'DevaChan Soho', 
     location: '425 Broome Street, New York, NY 10013', 
     specialize_in: ['haircut', 'curls', 'natural hair styling'],
-    image: 'https://res.cloudinary.com/devacurl/image/upload/f_auto,q_auto,w_1400,d_true,dpr_auto/DevaCurl/hp_curl-flex-ebony_1500x844', 
+    image: 'https://res.cloudinary.com/devacurl/image/upload/f_auto,q_auto,h_600,c_scale,d_true,dpr_auto/DevaCurl/all-about-curls_1_carousel_1500x1122', 
     description:'DevaCurl has always adapted to meet the changing needs of those who rely on our products every day. This relaunch is an exciting next step in an evolution of our products that spans more than 25 years. Our understanding of how our consumers’ needs and styling habits change is what has always made these moments of growth possible. The new dermatologist co-developed, stylist-approved DevaCurl products will give curly-haired consumers more Curl Flexibility™ than ever.'
     )
     
-    salon4 = Salon.create(
+salon4 = Salon.create(
         name: 'Mona Baltazar', 
         location: '526 7th Avenue, Floor 5 New York, NY 10018', 
         specialize_in: ['color', 'haircut', 'blowouts', 'single process', 'natural hair styling', 'curls'],
@@ -58,7 +65,6 @@ salon3 = Salon.create(
 salon5 = Salon.create(
     name: 'Hair Rules', 
     location: '828 9th Avenue, Suite 1, New York, New York, 10019', 
-    specialize_in: ['color', 'haircut', 'curls', 'blowouts', 'weaves', 'natural hair styling', 'keratin'],
     specialize_in: ['color', 'haircut', 'curly', 'blowouts', 'wash and press', 'natural hair styling', 'highlights'],
     image: 'https://mk0hairrulesv2n8duml.kinstacdn.com/wp-content/uploads/2019/11/Hair-Rules-Salon-NY-Chairs.jpg', 
     description: 'All textures are uniquely beautiful and should be celebrated. We believe this at our very core. We believe all hair should be free. Our team is here to inspire, celebrate, empower, and embrace all textures. Our team is here for you.'
@@ -98,7 +104,28 @@ salon9 = Salon.create(
     image: 'https://foxandjanesalon.com/wp-content/uploads/2018/12/STYLISTCLIENT_P1-600x1000.jpg', 
     description: 'Driven to empower, innovate and uplift the modern beauty industry, Lorean, Billy, and the rest of the Behind the Scenes Crew provide a community experience unlike any other. Through personalized business coaching, continuous education, and a close-knit support system, this top performing industry powerhouse focuses on creating an environment that encourages growth and promotes successful careers. Achieving your goals and taking control of your limitless potential has never felt more like home!'
     )
-
+salon10 = Salon.create(
+    name: 'New Light Hair Salon', 
+    location: '2346 86th St, Brooklyn, NY 11214', 
+    specialize_in: ['Blow Dry', 'barber', 'pixie', 'haircut', 'keratin', 'blowouts', 'customcolor', 'silk press', 'Bridal', 'glossing', 'highlights', 'color'],
+    image: 'https://salon-media.s3.ca-central-1.amazonaws.com/wp-content/uploads/2018/11/novdec_interiors_vendittelli_slider.jpg', 
+    description: 'If you’re looking for an affordable one stop salon, then New Light may be the place for you! Located in Bath Beach, Brooklyn, New Light offers a wide range of services including: hair treatment, skincare and eyelash services!
+    All of the stylists are very experienced and can offer a variety of hair services to you! Looking for something fancy like an ombre balayage? They got you covered! They also offer things of the simpler side, such as quick cuts and blow-dry, as well as haircuts for men as well!'
+    )
+salon11 = Salon.create(
+    name: 'New Light Hair Salon', 
+    location: '2346 86th St, Brooklyn, NY 11214', 
+    specialize_in: ['Blow Dry', 'barber', 'pixie', 'haircut', 'keratin', 'blowouts', 'customcolor', 'silk press', 'Bridal', 'braids', 'highlights', 'color', 'curl', 'natural'],
+    image: 'https://i.guim.co.uk/img/media/f204437f4189949d6e74aa1052de1f6ac14366fa/0_60_6021_3613/master/6021.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=eaed5aae99c26e961db5be64a6d4b4fd', 
+    description: 'All of the stylists are very experienced and can offer a variety of hair services to you! Looking for something fancy like an ombre balayage? They got you covered! They also offer things of the simpler side, such as quick cuts and blow-dry, as well as haircuts for men as well!'
+    )
+salon12 = Salon.create(
+    name: 'Curls r Us', 
+    location: '156 6th St, Brooklyn, NY 11214', 
+    specialize_in: ['Blow Dry', 'barber', 'pixie', 'haircut', 'keratin', 'blowouts', 'customcolor', 'silk press', 'Bridal', 'braids', 'highlights', 'color', 'curl', 'natural'],
+    image: 'https://diana-cdn.naturallycurly.com/Articles2.0/7BpOJPlzuJRqjG0nvfRioB/contentImages/3b283d392e1a3d561ba66b2d35bd42b4/christo-700.jpg', 
+    description: 'All of the stylists are very experienced and can offer a variety of hair services to you! Looking for something fancy like an ombre balayage? They got you covered! They also offer things of the simpler side, such as quick cuts and blow-dry, as well as haircuts for men as well!'
+    )
 
 
 puts 'Creating Service...💇🏽‍♀️'
@@ -225,6 +252,44 @@ Service.create(name: 'Single panel Highlight', price: 102, salon_id: salon9.id)
 Service.create(name: 'Half Head Highlight', price: 172, salon_id: salon9.id)
 Service.create(name: 'Full Head Highlight', price: 212, salon_id: salon9.id)
 
+Service.create(name: 'Cut, Shape, Trim', price: 200, salon_id: salon10.id)
+Service.create(name: "Men's Haircut", price: 200, salon_id: salon10.id)
+Service.create(name: 'Blow Out/Blow Dry/Silk Press', price: 100, salon_id: salon10.id)
+Service.create(name: 'Curly Style', price: 100, salon_id: salon10.id)
+Service.create(name: 'Weave/Wig Hair Cut', price: 250, salon_id: salon10.id)
+Service.create(name: 'Curly Lesson', price: 100, salon_id: salon10.id)
+Service.create(name: 'Few Highlights', price: 180, salon_id: salon10.id)
+Service.create(name: '1/2 Highlight', price: 255, salon_id: salon10.id)
+Service.create(name: 'Full Highlight', price: 300, salon_id: salon10.id)
+Service.create(name: 'Single Process', price: 135, salon_id: salon10.id)
+Service.create(name: 'Weave Color', price: 200, salon_id: salon10.id)
+Service.create(name: 'Olaplex Treatment', price: 50, salon_id: salon10.id)
+
+Service.create(name: 'Starter Locs', price: 90, salon_id: salon12.id)
+Service.create(name: 'Rod Set', price: 110, salon_id: salon12.id)
+Service.create(name: 'Two-Strand Twist', price: 115, salon_id: salon12.id)
+Service.create(name: 'Quick weave', price: 185, salon_id: salon12.id)
+Service.create(name: 'Roller Set', price: 50, salon_id: salon12.id)
+Service.create(name: 'Wash & Blow Dry' , price: 45, salon_id: salon12.id)
+Service.create(name: 'Trim', price: 35, salon_id: salon12.id)
+Service.create(name: 'Cut', price: 85 , salon_id: salon12.id)
+Service.create(name: 'Half Head Highlight', price: 172, salon_id: salon12.id)
+Service.create(name: 'Full Head Highlight', price: 212, salon_id: salon12.id)
+
+Service.create(name: 'Cut, Shape, Trim', price: 200, salon_id: salon11.id)
+Service.create(name: "Men's Haircut", price: 200, salon_id: salon11.id)
+Service.create(name: 'Blow Out/Blow Dry/Silk Press', price: 100, salon_id: salon11.id)
+Service.create(name: 'Curly Style', price: 100, salon_id: salon11.id)
+Service.create(name: 'Weave/Wig Hair Cut', price: 250, salon_id: salon11.id)
+Service.create(name: 'Curly Lesson', price: 100, salon_id: salon11.id)
+Service.create(name: 'Few Highlights', price: 180, salon_id: salon11.id)
+Service.create(name: '1/2 Highlight', price: 255, salon_id: salon11.id)
+Service.create(name: 'Full Highlight', price: 300, salon_id: salon11.id)
+Service.create(name: 'Single Process', price: 135, salon_id: salon11.id)
+Service.create(name: 'Weave Color', price: 200, salon_id: salon11.id)
+Service.create(name: 'Olaplex Treatment', price: 50, salon_id: salon11.id)
+Service.create(name: 'Creative Color', price: 250, salon_id: salon11.id)
+
 
 # Service.create(name: '', price: , salon_id: salon6.id)
 # Service.create(name: '', price: , salon_id: salon4.id)
@@ -254,12 +319,12 @@ review1 = Review.create(
     rating: 5, 
     comment: 'The cozy space is all exposed brick and oversized mirrors, and she’s always got R&B jams playing. This spot specializes in silk presses — look on any stylist’s station and you’ll see a flat iron and hot comb laid side by side — and weave installations. Ursula is also a master at cuts. She can give you anything, from a blunt bob to a textured pixie and even feathery layers.', 
     salon_id: salon1.id, 
-    user_id: user1.id
+    user_id: user2.id
     )
 
 review1.review_photo.attach(
-    io: File.open('./public/review_photos/hair-pic.jpeg'),
-    filename: 'hair-pic.jpeg', 
+    io: File.open('./public/review_photos/ursula1.jpeg'),
+    filename: 'ursula1.jpeg', 
     content_type: 'application/jpeg'
 )
 
@@ -267,12 +332,12 @@ review2 = Review.create(
     rating: 4, 
     comment: "I discovered Reece from a friend of mine who worked with her for an editorial piece. I have a head of barely-there tapered curls that I adore and a hairstylist I feel 100% comfortable trying new things with. Not only does Reece know how to care for curls, she also knows how to make her clients fall in love with their hair.", 
     salon_id: salon1.id, 
-    user_id: user1.id
+    user_id: user8.id
     )
     
 review2.review_photo.attach(
-    io: File.open('./public/review_photos/hair-pic.jpeg'),
-    filename: 'hair-pic.jpeg', 
+    io: File.open('./public/review_photos/zendaya.jpeg'),
+    filename: 'zendaya.jpeg', 
     content_type: 'application/jpeg'
 )
 
@@ -280,7 +345,7 @@ review3 = Review.create(
     rating: 5, 
     comment: "Candace starts off each appointment with a consultation to get an idea of what you want, and she'll give you her honest opinion on what may (or may not) work with your texture. She's trained in cutting curly hair so that the shape is tailored specifically to your face and style. I’ve left every appointment satisfied with my bouncy, healthy curls.", 
     salon_id: salon3.id, 
-    user_id: user2.id
+    user_id: user7.id
     )
 
 review3.review_photo.attach(
@@ -293,71 +358,71 @@ review4 = Review.create(
     rating: 5, 
     comment: "Mona speaks to you beforehand so that you're both on the same page before the scissors come out. I never wondered, 'Omg, what is she doing now?' Overall, she gave me exactly what I was looking for. She even followed up with me and messaged me on Instagram after the haircut to see how I was adjusting to my new look. Now, I can't imagine going anywhere else.", 
     salon_id: salon4.id, 
-    user_id: user3.id
+    user_id: user5.id
     )
     
 review4.review_photo.attach(
-    io: File.open('./public/review_photos/hair-pic.jpeg'),
-    filename: 'hair-pic.jpeg', 
+    io: File.open('./public/review_photos/mona.jpeg'),
+    filename: 'mona.jpeg', 
     content_type: 'application/jpeg'
 )
-    review5 = Review.create(
+review5 = Review.create(
         rating: 5, 
         comment: "I found Jaxcee on Instagram and saw that she frequently colors curls, so I took a chance. Jackie took my jet-black hair to a warm blonde shade in two sessions. I loved my hair, and I haven't experienced any damage or breakage since my appointment. My color looks extremely natural and there are no harsh lines. If Jaxcee's doing your color, know that your curls are in good hands.", 
         salon_id: salon5.id, 
         user_id: user1.id
         )
-    review5.review_photo.attach(
+review5.review_photo.attach(
         io: File.open('./public/review_photos/hair-pic.jpeg'),
         filename: 'hair-pic.jpeg', 
         content_type: 'application/jpeg'
     )
 
-    review6 = Review.create(
+review6 = Review.create(
         rating: 5, 
         comment: "Sitting in her chair felt like being around an old friend. She has such an amazing soul and, not to mention, she's super talented with curly hair. It's going on 3 years now that I've been going to 5 Salon and Spa, and I will forever be a loyal client.", 
         salon_id: salon6.id, 
         user_id: user2.id
         )
-    review6.review_photo.attach(
+review6.review_photo.attach(
         io: File.open('./public/review_photos/hair-pic.jpeg'),
         filename: 'hair-pic.jpeg', 
         content_type: 'application/jpeg'
     )
             
-    review7 = Review.create(
+review7 = Review.create(
         rating: 4, 
         comment: "One of the best salons in town and it's stuck around for a reason. Has a welcoming ambiance.", 
         salon_id: salon7.id, 
         user_id: user3.id
         )
-    review7.review_photo.attach(
-        io: File.open('./public/review_photos/hair-pic.jpeg'),
-        filename: 'hair-pic.jpeg', 
-        content_type: 'application/jpeg'
+review7.review_photo.attach(
+        io: File.open('./public/review_photos/jumbo-braids-1570560720.png'),
+        filename: 'jumbo-braids-1570560720.png', 
+        content_type: 'application/png'
     )
                 
-    review8 = Review.create(
+review8 = Review.create(
         rating: 5, 
         comment: "At Spoke & Weal Soho, you don’t tell Master Stylist Kelsy Osterman the exact length you’re going for—she lets your hair's natural texture dictate that for you instead.  Best hair makeover!", 
         salon_id: salon8.id, 
         user_id: user4.id
     )
-    review8.review_photo.attach(
-        io: File.open('./public/review_photos/hair-pic.jpeg'),
-        filename: 'hair-pic.jpeg', 
+review8.review_photo.attach(
+        io: File.open('./public/review_photos/keratin.jpeg'),
+        filename: 'keratin.jpeg', 
         content_type: 'application/jpeg'
     )
     
-    review9 = Review.create(
+review9 = Review.create(
         rating: 3, 
         comment: "F&J embraces fun and community and prioritizes salon culture. We love that their pricing is uniquely based on hair length and service difficulty (rather than gender).", 
         salon_id: salon9.id, 
-        user_id: user3.id
+        user_id: user6.id
         )
         
-    review9.review_photo.attach(
-        io: File.open('./public/review_photos/hair-pic.jpeg'),
-        filename: 'hair-pic.jpeg', 
+review9.review_photo.attach(
+        io: File.open('./public/review_photos/colored.jpeg'),
+        filename: 'colored.jpeg', 
         content_type: 'application/jpeg'
     )
